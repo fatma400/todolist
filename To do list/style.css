@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(230, 230, 250, 0.575);
+}
+.container{
+   margin-top: 50px;
+}
+.todo-container{
+    background-color: rgba(0, 0, 0, 0.068);
+    background-color: rgba(0, 128, 128, 0.527);
+}
+.todo-container .add-tasks{
+    padding: 15px;
+    background-color: lavender;
+    position: relative;
+}
+.todo-container .add-tasks input{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    width: calc(100% - 15px);
+    background-color: lightblue;
+    font-size: 20px;
+}
+.todo-container .add-tasks input:focus{
+    outline: none;
+}
+.todo-container .add-tasks .plus{
+    position: absolute;
+    height: 45px;
+    width: 43px;
+    color: black;
+    background-color: white;
+    right: 12px;
+    border-radius: 50%;
+    line-height: 43px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 35px;
+    transition:all .3s;
+}
+.todo-container .add-tasks .plus:hover{
+    transform: rotate(98deg);
+}
+.todo-container .tasks-content{
+    padding: 15px;
+    margin-top: 30px;
+}
+.todo-container .tasks-content > span{
+    display: block;
+    background-color: white;
+    padding: 10px;
+}
+.todo-container .tasks-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+.todo-container .tasks-content .task .delete{
+    float:right;
+    background-color: #E91E63;
+    padding: 4px 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.todo-container .tasks-content .task .finished{
+    text-decoration: line-through;
+}
+.task-stats{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 12px;
+}
+.task-stats .tasks-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.task-stats .tasks-completed{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+.button{
+    float: right;
+    margin-top: 40px;
+}
+button{
+    text-transform: uppercase;
+}
+.task{
+    cursor: pointer;
+    overflow: auto;
+}
+.done{
+    text-decoration: line-through;
+}
